@@ -1,0 +1,19 @@
+{
+  "name": "cd_consts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cd_consts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RulezKT/cd_consts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RulezKT/cd_consts/issues"
+  },
+  "homepage": "https://github.com/RulezKT/cd_consts#readme"
+}
