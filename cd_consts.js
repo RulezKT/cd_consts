@@ -692,6 +692,73 @@ const DE440s = {
   },
 };
 
+// NAIF names and codes for planets
+const planets_names = [
+  "SOLAR SYS. BARY.", // 0
+  "MERCURY BARYCENTER", // 1
+  "VENUS BARYCENTER", // 2
+  "EARTH-MOON BARY.", // 3
+  "MARS BARYCENTER", // 4
+  "JUPITER BARYCENTER", // 5
+  "SATURN BARYCENTER", // 6
+  "URANUS BARYCENTER", // 7
+  "NEPTUNE BARYCENTER", // 8
+  "PLUTO BARYCENTER", // 9
+  "SUN", // 10
+  "MOON", // 301  instead of 11
+  "EARTH", // 399 instead of 12
+  "MERCURY", // 199 instead of 13
+  "VENUS", // 299 instead of 14
+];
+
+// finds and returns planet name by naif_id number
+function planet_name(naif_id) {
+  if (naif_id >= 0 && naif_id <= 10) return planets_names[naif_id];
+
+  let temp_id;
+
+  switch (naif_id) {
+    case 199:
+    case 13:
+      temp_id = 13;
+      break;
+    case 299:
+    case 14:
+      temp_id = 14;
+      break;
+    case 399:
+    case 12:
+      temp_id = 12;
+      break;
+    case 301:
+    case 11:
+      temp_id = 11;
+      break;
+    /*	case 499:
+                temp_id = 15;
+                break;
+            case 599:
+                temp_id = 16;
+                break;
+            case 699:
+                temp_id = 17;
+                break;
+            case 799:
+                temp_id = 18;
+                break;
+            case 899:
+                temp_id = 19;
+                break;
+            case 999:
+                temp_id = 20;
+                break; */
+    default:
+      return "Unknown planet!!!";
+    // break;
+  }
+  return planets_names[temp_id];
+}
+
 module.exports = {
   SSB,
   MERCURY,
@@ -736,4 +803,6 @@ module.exports = {
   oneToneInDec,
   oneBaseInDec,
   RAD_88_DEGREES,
+  planets_names,
+  planet_name,
 };
