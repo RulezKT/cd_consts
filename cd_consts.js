@@ -449,8 +449,8 @@ const dispositors = [
 ];
 
 const DE440s = {
-  path: "./files/de440s.bsp",
-  nodes_file: "./files/nodes_file.json",
+  bsp_file: "de440s.bsp",
+  nodes_file: "nodes_file.json",
   MIN_DATA: -4734072000.0,
   MAX_DATA: 4735368000.0,
   RECLEN: 1024,
