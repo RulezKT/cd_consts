@@ -211,7 +211,10 @@ const monthsArr = [
 ];
 
 // zodiac names from 0 to 11
+// 0 - empty
+// zodiac names from 1 to 12
 const zodiacNames = [
+  "", //????????
   "Aries",
   "Taurus",
   "Gemini",
