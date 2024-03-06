@@ -779,6 +779,14 @@ const DE440s = {
   },
 };
 
+const type_of_time = {
+  ephemeris_time_with_deltaT: 0,
+  ephemeris_time: 1,
+  UTC_time: 2,
+  local_time: 3,
+  transit_time: 4,
+};
+
 // NAIF names and codes for planets
 const planets_names = [
   "SOLAR SYS. BARY.", // 0
@@ -893,5 +901,6 @@ module.exports = {
   planets_names,
   planets_houses,
   signs_sorted_by_deg,
+  type_of_time,
   planet_name,
 };
