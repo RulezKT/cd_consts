@@ -448,6 +448,90 @@ const dispositors = [
   ["Cancer"],
 ];
 
+const signs_sorted_by_deg = [
+  [0, [0, 0]],
+
+  //Aries, Овен from 0 to 29.9
+  [1, [0, 30]],
+
+  //Taurus,  Телец from 30 to 59.9
+  [2, [30, 60]],
+
+  //Gemini,  Близнецы from 60 to 89.9
+  [3, [60, 90]],
+
+  //Cancer,  Рак from 90 to 119.9
+  [4, [90, 120]],
+
+  //Leo,  Лев from 120 to 149.9
+  [5, [120, 150]],
+
+  //Virgo,  Дева from 150 to 179.9
+  [6, [150, 180]],
+
+  //Libra,  Весы from 180 to 209.9
+  [7, [180, 210]],
+
+  //Scorpio,  Скорпион from 210 to 239.9
+  [8, [210, 240]],
+
+  //Sagittarius,  Стрелец from 240 to 269.9
+  [9, [240, 270]],
+
+  //Capricorn,  Козерог from 270 to 299.9
+  [10, [270, 300]],
+
+  //Aquarius,  Водолей from 300 to 329.9
+  [11, [300, 330]],
+
+  //Pisces,  Рыбы from 330 to 359.9
+  [12, [330, 360]],
+];
+
+//дома планет,
+// указаны соответствующие номера знаков зодиака от 1 до 12
+const planets_houses = [
+  [0],
+
+  //Mercury Barycenter - Gemini and Virgo
+  [3, 6],
+
+  //Venus Barycenter - Taurus and Libra
+  [2, 7],
+
+  //Earth Barycenter
+  [0],
+
+  //Mars - Aries
+  [1],
+
+  //Jupiter  - Sagittarius
+  [9],
+
+  //Saturn - Capricorn
+  [10],
+
+  //Uranus - Aquarius
+  [11],
+
+  //Neptune - Pisces
+  [12],
+
+  //Pluto - Scorpio
+  [8],
+
+  //Sun - Leo
+  [5],
+
+  //Moon - Cancer
+  [4],
+
+  //Earth, Mercury, Venus
+  [0],
+  [0],
+  [0],
+];
+
 const DE440s = {
   bsp_file: "de440s.bsp",
   nodes_file: "nodes_file.json",
@@ -804,5 +888,7 @@ module.exports = {
   oneBaseInDec,
   RAD_88_DEGREES,
   planets_names,
+  planets_houses,
+  signs_sorted_by_deg,
   planet_name,
 };
