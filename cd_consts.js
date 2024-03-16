@@ -537,7 +537,7 @@ const planets_houses = [
 
 const DE440s = {
   bsp_file: "de440s.bsp",
-  nodes_file: "nodes_file.json",
+  nodes_file: "nodes.json",
   MIN_DATA: -4734072000.0,
   MAX_DATA: 4735368000.0,
   RECLEN: 1024,
